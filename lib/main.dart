@@ -1,5 +1,4 @@
 import 'package:example_app/constants/app_colors.dart';
-import 'package:example_app/screens/game_page/game_page.dart';
 import 'package:example_app/screens/home_page/home_page.dart';
 import 'package:flutter/material.dart';
 

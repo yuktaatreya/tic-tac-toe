@@ -1,5 +1,4 @@
 import 'package:example_app/entities/player_model.dart';
-import 'package:example_app/entities/player_type_enum.dart';
 
 abstract class GamePageEvent {}
 

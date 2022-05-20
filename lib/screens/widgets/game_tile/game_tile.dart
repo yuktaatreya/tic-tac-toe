@@ -1,5 +1,4 @@
 
-import 'package:example_app/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 class GameTile extends StatelessWidget {
   final int id;
@@ -29,7 +28,7 @@ class GameTile extends StatelessWidget {
                     color: Theme.of(context).primaryColorLight,
                     shape: BoxShape.rectangle,
                     border: Border.all(color:Colors.black),
-                    borderRadius: BorderRadius.all(Radius.circular(5))))));;
+                    borderRadius: BorderRadius.all(Radius.circular(5))))));
   }
 }
 

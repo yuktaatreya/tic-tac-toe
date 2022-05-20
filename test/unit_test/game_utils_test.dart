@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:example_app/entities/player_model.dart';
 import 'package:example_app/entities/player_symbol_enum.dart';
 import 'package:example_app/entities/player_type_enum.dart';

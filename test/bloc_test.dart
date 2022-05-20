@@ -6,7 +6,6 @@ import 'package:example_app/screens/game_page/bloc/game_page_bloc.dart';
 import 'package:example_app/screens/game_page/bloc/game_page_events.dart';
 import 'package:example_app/screens/game_page/bloc/game_page_state.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mockito/mockito.dart';
 
 void main(){
   group('GamePageBloc', () {

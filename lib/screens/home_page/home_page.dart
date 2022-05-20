@@ -1,4 +1,3 @@
-import 'package:example_app/constants/app_colors.dart';
 import 'package:example_app/constants/app_strings.dart';
 import 'package:example_app/constants/asset_paths.dart';
 import 'package:example_app/entities/player_model.dart';
@@ -80,6 +79,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                   onPressed:(){
                     if(isX){
+
                       playerOne.symbol=PlayerSymbolEnum.X;
                       playerTwo.symbol=PlayerSymbolEnum.O;
                     }

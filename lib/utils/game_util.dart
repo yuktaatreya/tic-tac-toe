@@ -1,6 +1,3 @@
-import 'dart:ui';
-
-import 'package:example_app/constants/app_colors.dart';
 import 'package:example_app/constants/app_strings.dart';
 import 'package:example_app/screens/game_page/bloc/game_page_state.dart';
 import 'package:flutter/material.dart';

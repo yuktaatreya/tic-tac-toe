@@ -1,4 +1,3 @@
-import 'package:example_app/constants/app_colors.dart';
 import 'package:example_app/constants/app_strings.dart';
 import 'package:example_app/entities/player_model.dart';
 import 'package:example_app/entities/player_type_enum.dart';

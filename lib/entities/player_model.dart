@@ -8,6 +8,7 @@ class Player extends Equatable{
   late PlayerSymbolEnum? symbol;
   Player({required this.number,this.playerType,this.symbol});
 
+
   @override
   List<Object?> get props => [playerType,number,symbol];
 
