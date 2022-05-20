@@ -1,4 +1,4 @@
-# example_app
+# tic-tac-toe
 
 A new Flutter project.
 
