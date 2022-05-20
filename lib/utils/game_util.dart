@@ -2,7 +2,7 @@ import 'package:example_app/constants/app_strings.dart';
 import 'package:example_app/screens/game_page/bloc/game_page_state.dart';
 import 'package:flutter/material.dart';
 
-import '../entities/player_symbol_enum.dart';
+import 'package:example_app/entities/player_symbol_enum.dart';
 
 class GameUtil {
   static int evaluateBoard(List<int> board) {

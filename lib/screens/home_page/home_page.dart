@@ -6,7 +6,7 @@ import 'package:example_app/screens/game_page/game_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../entities/player_symbol_enum.dart';
+import 'package:example_app/entities/player_symbol_enum.dart';
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 

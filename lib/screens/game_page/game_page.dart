@@ -3,7 +3,7 @@ import 'package:example_app/entities/player_model.dart';
 import 'package:example_app/entities/player_type_enum.dart';
 import 'package:example_app/screens/game_page/bloc/game_page_bloc.dart';
 import 'package:example_app/screens/game_page/bloc/game_page_events.dart';
-import 'package:example_app/screens/widgets/game_tile/game_tile.dart';
+import 'package:example_app/screens/widgets/game_tile.dart';
 import 'package:example_app/utils/game_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
