@@ -38,17 +38,17 @@ class _GamePageState extends State<GamePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.colorOne,
+      backgroundColor: Theme.of(context).primaryColorDark,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: AppColors.colorOne,
+        backgroundColor: Theme.of(context).primaryColorDark,
         title: Text(AppStrings.app_bar_title_text,
-        style: TextStyle(color: AppColors.colorTwo),),
+        style: TextStyle(color: Theme.of(context).primaryColorLight),),
         actions: <Widget>[
           IconButton(onPressed: (){
             GameUtil.showRulesDialog(context);
           },
-              icon: Icon(Icons.info_outline,color: AppColors.colorTwo,))
+              icon: Icon(Icons.info_outline,color: Theme.of(context).primaryColorLight,))
         ],
       ),
       body: Center(

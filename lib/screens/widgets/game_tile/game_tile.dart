@@ -22,11 +22,11 @@ class GameTile extends StatelessWidget {
                 child: Center(
                   child: Text(text,
                     textDirection: TextDirection.ltr,
-                    style: TextStyle(fontWeight: FontWeight.normal,fontSize: 28,color: AppColors.colorOne),
+                    style: TextStyle(fontWeight: FontWeight.normal,fontSize: 28,color: Theme.of(context).primaryColorDark),
                   ),
                 ),
                 decoration: new BoxDecoration(
-                    color: AppColors.colorTwo,
+                    color: Theme.of(context).primaryColorLight,
                     shape: BoxShape.rectangle,
                     border: Border.all(color:Colors.black),
                     borderRadius: BorderRadius.all(Radius.circular(5))))));;

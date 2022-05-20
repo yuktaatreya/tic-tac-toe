@@ -18,12 +18,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   bool isMultiPlayer=false;
   bool isX=true;
+  Player playerOne =Player(number: 1,playerType: PlayerTypeEnum.HUMAN);
+  Player playerTwo = Player(number: 2);
   @override
   Widget build(BuildContext context) {
-    Player playerOne =Player(number: 1,playerType: PlayerTypeEnum.HUMAN);
-    Player playerTwo = Player(number: 2);
+
     return Scaffold(
-      backgroundColor: AppColors.colorOne,
+      backgroundColor: Theme.of(context).primaryColorDark,
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -34,7 +35,7 @@ class _HomePageState extends State<HomePage> {
                 style: TextStyle(
                     fontWeight: FontWeight.normal,
                     fontSize: 36,
-                    color:AppColors.colorTwo),),
+                    color:Theme.of(context).primaryColorLight),),
               GestureDetector(
                   onTap: () {
                     setState(() {
@@ -46,12 +47,12 @@ class _HomePageState extends State<HomePage> {
                       width: MediaQuery.of(context).size.width*0.65,
                       decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                      color: isX?AppColors.colorTwo:AppColors.colorOne
+                      color: isX?Theme.of(context).primaryColorLight:Theme.of(context).primaryColorDark
                     ),
                       child: Padding(
                         padding: const EdgeInsets.all(15.0),
                         child: SvgPicture.asset(AssetPaths.x_icon,
-                        color: isX?AppColors.colorOne:AppColors.colorTwo,
+                        color: isX?Theme.of(context).primaryColorDark:Theme.of(context).primaryColorLight,
                           fit: BoxFit.contain,
                         ),
                       ))),
@@ -66,16 +67,16 @@ class _HomePageState extends State<HomePage> {
                       width: MediaQuery.of(context).size.width*0.65,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                          color: isX?AppColors.colorOne:AppColors.colorTwo
+                          color: isX?Theme.of(context).primaryColorDark:Theme.of(context).primaryColorLight
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(15.0),
                         child: SvgPicture.asset(AssetPaths.o_icon,
-                          color: isX?AppColors.colorTwo:AppColors.colorOne),
+                          color: isX?Theme.of(context).primaryColorLight:Theme.of(context).primaryColorDark),
                       ))),
               ElevatedButton(
                 style: ButtonStyle(
-                  backgroundColor:MaterialStateProperty.all(AppColors.colorTwo)
+                  backgroundColor:MaterialStateProperty.all(Theme.of(context).primaryColorLight)
                 ),
                   onPressed:(){
                     if(isX){
@@ -97,7 +98,7 @@ class _HomePageState extends State<HomePage> {
                           GamePage(playerOne: playerOne,playerTwo: playerTwo)));
                   },
                   child: Text(AppStrings.play_cta_text,textDirection: TextDirection.ltr,
-                  style: TextStyle(color: AppColors.colorOne,fontSize: 20,fontWeight: FontWeight.bold),))
+                  style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.bold),))
 
             ],
           ),

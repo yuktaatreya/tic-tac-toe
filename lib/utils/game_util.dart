@@ -76,10 +76,10 @@ class GameUtil {
   static Widget alertDialog(BuildContext context, GamePageState state,
       Function restart, String titleText) {
     return AlertDialog(
-      backgroundColor: AppColors.colorOne,
+      backgroundColor: Theme.of(context).primaryColorDark,
       title: Center(
           child: Text(
-        titleText, style: TextStyle(color: AppColors.colorTwo),
+        titleText, style: TextStyle(color: Theme.of(context).primaryColorLight),
         textDirection: TextDirection.ltr,
       )),
       actions: <Widget>[
@@ -89,9 +89,9 @@ class GameUtil {
               Navigator.of(context).pop();
             },
             style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(AppColors.colorTwo)),
+                backgroundColor: MaterialStateProperty.all(Theme.of(context).primaryColorLight)),
             child: Text(AppStrings.restart_cta_text,
-                style: TextStyle(color: AppColors.colorOne))),
+                style: TextStyle(color: Theme.of(context).primaryColorDark))),
       ],
     );
   }
@@ -101,19 +101,19 @@ class GameUtil {
         context: context,
         builder: (context) {
           return AlertDialog(
-            backgroundColor: AppColors.colorOne,
+            backgroundColor: Theme.of(context).primaryColorDark,
             title: Center(
               child: Text(
                 AppStrings.rules_title_text,
                 style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: AppColors.colorTwo),
+                    color: Theme.of(context).primaryColorLight),
               ),
             ),
             content: Text(
               AppStrings.rules_desc_text,
-              style: TextStyle(fontSize: 14, color: AppColors.colorTwo),
+              style: TextStyle(fontSize: 14, color: Theme.of(context).primaryColorLight),
             ),
           );
         });
